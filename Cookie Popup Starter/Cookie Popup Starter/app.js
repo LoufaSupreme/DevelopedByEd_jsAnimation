@@ -16,7 +16,18 @@ timeline.fromTo('#crumbs', {y: 0}, {y: -20, yoyo: true, repeat: -1}, '<')
 
 // fading out on click
 const button = document.querySelector('button');
+const removeElement = (elem) => {
+    elem.remove();
+    console.log('Element removed from DOM');
+}
 
 button.addEventListener('click', () => {
-    gsap.to('.cookie-container', {opacity: 0, y: 100, duration: 0.75, ease: 'power1.out'})
+    gsap.to('.cookie-container', {
+        opacity: 0, 
+        y: 100, 
+        duration: 0.75, 
+        ease: 'power1.out',
+        onComplete: removeElement,
+        onCompleteParams: [cookieContainer],
+    })
 })
