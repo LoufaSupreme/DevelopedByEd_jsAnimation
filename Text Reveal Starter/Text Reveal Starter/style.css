@@ -18,6 +18,7 @@ nav {
 .logo {
   font-size: 1.2rem;
   color: rgb(33,33,33);
+  overflow: hidden;
 }                       
 
 .hero-section {
@@ -67,4 +68,5 @@ nav {
   border: none;
   font-size: 0.7rem;
   font-weight: bolder;
+  cursor: pointer;
 }
