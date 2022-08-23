@@ -20,4 +20,12 @@ tl.fromTo('.hero-img',
         ease: "elastic.out(1.5,1)",
     })
 
-tl.fromTo('.cta1', { x: 110, opacity: 0 }, { x: 0, opacity: 1})
+tl.fromTo('.cta1', { x: "100%", opacity: 0 }, { x: 0, opacity: 1}, "<20%");
+tl.fromTo('.cta3', { x: "-100%", opacity: 0 }, { x: 0, opacity: 1}, "<20%");
+tl.fromTo('.cta2', { y: "100%", opacity: 0 }, { y: 0, opacity: 1}, "<20%");
+
+tl.fromTo('.cta4', { x: "100%", opacity: 0 }, { x: 0, opacity: 1}, "<20%");
+tl.fromTo('.cta6', { x: "-100%", opacity: 0 }, { x: 0, opacity: 1}, "<20%");
+tl.fromTo('.cta5', { y: "100%", opacity: 0 }, { y: 0, opacity: 1}, "<20%");
+
+tl.fromTo('.cta-btn', { y: 20, opacity: 0 }, { y: 0, opacity: 1 }, "<")
